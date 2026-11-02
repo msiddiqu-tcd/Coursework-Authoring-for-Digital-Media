@@ -1,0 +1,172 @@
+<!-- The Portfolio Times cover page/homepage-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--title of the page-->
+    <title>The Portfolio Times</title>
+<!--linking the css and js files to the html page-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+<!--header section of the page containing the brand name and navigation bar -->
+    <header class="site-header">
+
+        <a href="index.html" class="brand">
+            THE PORTFOLIO TIMES<span>.</span>
+
+        </a>
+
+        <div class="edition">
+            THE IDEAS &amp; INNOVATION EDITION. 2026
+        </div>
+<!--navigation bar linking all the pages and current page is HOME---->
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="index.html" aria-current="page">HOME</a>
+            <a href="research.html">RESEARCH</a>
+            <a href="professional.html">PROFESSIONAL</a>
+            <a href="skills.html">SKILLS</a>
+            <a href="extras.html">EXTRAS</a>
+            <a href="about.html">ABOUT</a>
+
+        </nav>
+    </header>
+<!--main content of the page -->
+    <main>
+        <section class="cover-screen" id="cover">
+
+            <div class="cover-paper">
+                <div class="cover-topline">
+                    <span> INDEPENDENTLY CURIOUS SINCE DAY ONE</span>
+                    <span>VOL.001 / DUBLIN, IRELAND</span>
+                </div>
+<!--masthead of the page -->
+                <h1 class ="masthead">
+                    The Portfolio Times
+                </h1>
+<!--subheading of the page -->
+                <div class="masthead-sub">
+                    RESEARCH . ENGINEERING . INTERACTIVE MEDIA
+                </div>
+<!--rule separator -->
+                <div class="cover-rule"></div>
+<!--grid layout for the page -->
+                <div class="cover-grid">
+                    <div class="cover-main-story">
+                        <p class ="kicker">THE FRONT-PAGE STORY</p>
+
+                        <h2>
+                            Building technology <br>
+                            <em>around people.</em>
+                        </h2>
+<!--cover deck of the page -->
+                        <p class="cover-deck">
+                            A computer science engineer exploring the intersection of intelligent systems, human experience and thoughtful design.
+                        </p>
+<!--button to open the newspaper reader -->
+                        <button class="open-paper" id="openPaper">
+                            OPEN THE NEWSPAPER
+                        </button>
+                    </div>
+
+                    <div class="cover-visual">
+
+                        <img
+                            class="cover-portrait"
+                            src="media/about/profile.png"
+                            alt="Portrait of Muskaan">
+    
+                    </div>
+
+<!---sidebar content for each article-->
+                    <aside class="cover-sidebar">
+                        <article class="cover-teaser">
+                            <p>01 / RESEARCH </p>
+                            <h3>Exploring intelligent interaction</h3>
+                            <p>
+                               Multimodal AI, accessible systems and human-centered research.
+                            </p>
+                        </article>
+
+                        <article class="cover-teaser">
+                            <p>02 / INNOVATION</p>
+                            <h3>Research with real-world applications</h3>
+                            <p>
+                                Patents, technical implementation and published research.
+                            </p>
+                        </article>
+                    </aside>
+                </div>
+<!--bottom section -->
+                <div class="cover-bottom">
+                    <span> COMPUTER SCIENCE x HUMAN-CENTRED DESIGN</span>
+                    <span>THE PORTFOLIO TIMES</span>
+                </div>
+            </div>
+        </section>
+<!--newspaper reader buttons and spread -->
+        <div class="reader" id="reader" hidden>
+
+            <div class="reader-toolbar">
+                <button id="closePaper" class="toolbar-button">
+                    COVER
+                </button>
+<!--spread indicator and page navigation-->
+                <div class="page-indicator">
+                    <span>SPREAD<span id="pageNumber"> 01</span></span>
+                    <span>OF<span id="pageTotal"> 03</span></span>
+                    
+                </div>
+
+                <div class="toolbar-right">
+                    <button id="prevPage" class="turn-button">
+                        previous page
+                    </button>
+
+                    <button id="nextPage" class="turn-button">
+                        next page
+                    </button>
+                </div>
+            </div>
+
+            <!--book effects-->
+            <div class="book-stage">
+                <div class="book" id="book">
+
+                    <div class="paper-page page-left" id="leftPage">
+
+                    </div>
+
+                    <div class="paper-page page-right" id="rightPage">
+
+                    </div>
+
+                    <div class="turn-sheet" id="turnSheet">
+                        <div class="turn-front" id="turnFront">
+                        </div>
+
+                        <div class="turn-back" id="turnBack">
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+<!--footer section of the page -->
+            <div class="reader-footer">
+                <span>THE PORTFOLIO TIMES</span>
+                <span>TURN A PAGE. FOLLOW A QUESTION</span>
+<!--button to go to the next spread -->
+                <button id="nextPageBottom">
+                    NEXT SPREAD
+                </button>
+            </div>
+        </div>
+    </main>
+<!--close main content-->
+    </body>
+
+</html>
